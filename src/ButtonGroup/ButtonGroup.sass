@@ -1,0 +1,26 @@
+.flr-button-group
+  display: inline-flex
+  vertical-align: middle
+
+  & .flr-button:not(:last-child):not(:first-child)
+    border-radius: 0
+
+  &_horizontal
+    & .flr-button:first-child
+      border-bottom-right-radius: 0
+      border-top-right-radius: 0
+
+    & .flr-button:last-child
+      border-bottom-left-radius: 0
+      border-top-left-radius: 0
+
+  &_vertical
+    flex-direction: column
+
+    & .flr-button:last-child
+      border-top-right-radius: 0
+      border-top-left-radius: 0
+
+    & .flr-button:first-child
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 0

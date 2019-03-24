@@ -1,0 +1,119 @@
+.flr-button
+  cursor: pointer
+  outline: 0
+  margin: 0
+  padding: 0
+  border: none
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+  font-weight: bold
+  line-height: 100%
+  border-radius: 5px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  vertical-align: middle
+  transition: color 0.25s, background 0.25s, box-shadow 0.25s
+
+  &_small
+    font-size: 0.9rem
+    padding: 5px 10px
+
+  &_normal
+    padding: 10px 13px
+    font-size: 1rem
+
+  &_large
+    padding: 14px 24px
+    font-size: 1.08rem
+
+  &_primary
+    background: #0081ff
+    color: #fff
+    box-shadow: 0 3px 15px 0 rgba(0, 129, 255, 0.3)
+
+    &:not([disabled]):hover
+      background: #006fff
+
+    &:not([disabled]):active
+      background: #0059ff
+
+    &:not([disabled]):focus
+      box-shadow: 0 0 0 3px rgba(#0081ff, 0.3)
+
+  &_secondary
+    background: #d3eeff
+    color: #0082ff
+
+    &:not([disabled]):hover
+      background: #bbe5ff
+
+    &:not([disabled]):active
+      background: #acdfff
+
+    &:not([disabled]):focus
+      box-shadow: 0 0 0 3px rgba(#acdfff, 0.3)
+
+  &_success
+    background: #09b66d
+    color: #fff
+
+    &:not([disabled]):hover
+      background: #09ab67
+
+    &:not([disabled]):active
+      background: #099e5f
+
+    &:not([disabled]):focus
+      box-shadow: 0 0 0 3px rgba(#09b66d, 0.3)
+
+  &_danger
+    background: #ff3d57
+    color: #fff
+
+    &:not([disabled]):hover
+      background: #e3344b
+
+    &:not([disabled]):active
+      background: #ca2e43
+
+    &:not([disabled]):focus
+      box-shadow: 0 0 0 3px rgba(#ff3d57, 0.3)
+
+  &_warning
+    background: #fdbf5e
+    color: #fff
+
+    &:not([disabled]):hover
+      background: #ffb33d
+
+    &:not([disabled]):active
+      background: #ffac2b
+
+    &:not([disabled]):focus
+      box-shadow: 0 0 0 3px rgba(#fdbf5e, 0.3)
+
+  &_info
+    background: #22cce2
+    color: #fff
+
+    &:not([disabled]):hover
+      background: #1dbcd1
+
+    &:not([disabled]):active
+      background: #1bb7cb
+
+    &:not([disabled]):focus
+      box-shadow: 0 0 0 3px rgba(#22cce2, 0.3)
+
+  &_fill
+    width: 100%
+
+  &_disabled
+    cursor: default
+    opacity: 0.6
+
+  &_icon-before
+    margin-right: 8px
+
+  &_icon-after
+    margin-left: 8px
