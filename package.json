@@ -7,6 +7,8 @@
     "lint:fix": "eslint . --cache --fix",
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js",
+    "storybook": "start-storybook -p 6006 --ci",
+    "storybook:build": "build-storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,8 +21,19 @@
     "email": "cevladka@yandex.ru"
   },
   "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@storybook/addon-actions": "^5.0.3",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/react": "^5.0.3",
     "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
     "eslint": "^5.15.3",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
@@ -28,6 +41,14 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
-    "prettier": "^1.16.4"
+    "node-sass": "^4.11.0",
+    "prettier": "^1.16.4",
+    "react": "^16.8.5",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "latest"
   }
 }
