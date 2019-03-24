@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = async ({ config }) => {
   config.module.rules.push({
     test: /\.module\.(scss|sass)$/,
@@ -18,7 +20,8 @@ module.exports = async ({ config }) => {
   config.module.rules.push({
     test: /\.(scss|sass)$/,
     exclude: /\.module\.(scss|sass)$/,
-    loaders: [require.resolve('css-loader'), require.resolve('sass-loader')]
+    loaders: ['style-loader', 'css-loader', 'sass-loader'],
+    include: path.resolve(__dirname, '../')
   });
 
   return config;
