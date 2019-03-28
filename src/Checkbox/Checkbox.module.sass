@@ -1,0 +1,44 @@
+.root
+  user-select: none
+  margin: 0
+  padding: 0
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  position: relative
+  line-height: 1
+  vertical-align: baseline
+  color: #35576e
+
+.checked
+  .fakeInput
+    color: #0081ff
+
+.disabled
+  opacity: 0.6
+
+.focused
+  .fakeInput
+    box-shadow: 0 0 0 2px rgba(#0081ff, 0.3)
+
+.indeterminate
+
+.realInput
+  position: absolute
+  opacity: 0
+
+.fakeInput
+  padding: 0
+  margin: 0
+  display: inline-block
+  font-size: 18px
+  color: #e9eef1
+  height: 18px
+  flex-shrink: 0
+  vertical-align: baseline
+  border-radius: 100%
+  transition: color 0.25s, box-shadow 0.25s
+
+.label
+  margin-left: 10px
+  display: inline-block
