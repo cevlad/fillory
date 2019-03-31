@@ -4,6 +4,10 @@
   "description": "React UI component library",
   "main": "index.js",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cevlad/fillory.git"
+  },
   "scripts": {
     "lint": "eslint . --cache",
     "lint:fix": "eslint . --cache --fix",
