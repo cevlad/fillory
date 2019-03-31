@@ -1,6 +1,6 @@
 {
   "name": "fillory",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React UI component library",
   "main": "index.js",
   "private": true,
