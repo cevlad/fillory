@@ -31,6 +31,12 @@
     "email": "cevladka@yandex.ru"
   },
   "license": "MIT",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib/"
+  ],
   "peerDependencies": {
     "react": "^16.8.5",
     "react-dom": "^16.8.5"
